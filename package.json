@@ -5,7 +5,7 @@
 	"main": "config.js",
 	"scripts": {
 		"pcbuild": "webpack --config webpack.config.pc.js",
-		"pcdev": "webpack-dev-server --config webpack.config.pc.js --open",
+		"pcdev": "webpack-dev-server --inline --config webpack.config.pc.js  --open",
 		"h5build": "webpack --config webpack.config.h5.js",
 		"h5dev": "webpack-dev-server --config webpack.config.h5.js --open"
 	},
