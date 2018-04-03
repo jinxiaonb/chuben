@@ -3,6 +3,7 @@ const path = require('path');
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const webpack = require('webpack');
 
 //引入多页面文件列表
 const config = require("./config");
@@ -74,11 +75,18 @@ module.exports = {
 
 	plugins: [
 		new CleanWebpackPlugin(["dist"]),
+		new webpack.HotModuleReplacementPlugin(),
 		new MiniCssExtractPlugin({
 			filename: "css/[name].[hash].css"
 		}),
 		...HTMLPlugins
 	],
+	devServer:{
+		contentBase: "./", 
+		historyApiFallback:true,
+		inline:true,
+		hot:true
+   	},
 	optimization: {
 		runtimeChunk: {
 			name: "manifest"
