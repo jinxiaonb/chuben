@@ -72,6 +72,11 @@ module.exports = {
 			use: ["file"]
 		}]
 	},
+	resolve:{
+		alias:{
+			'vue$':'vue/dist/vue.common.js'
+		}
+	},
 
 	plugins: [
 		new CleanWebpackPlugin(["dist"]),
