@@ -75,18 +75,18 @@ module.exports = {
 
 	plugins: [
 		new CleanWebpackPlugin(["dist"]),
-		new webpack.HotModuleReplacementPlugin(),
+		//new webpack.HotModuleReplacementPlugin(),
 		new MiniCssExtractPlugin({
 			filename: "css/[name].[hash].css"
 		}),
 		...HTMLPlugins
 	],
-	devServer:{
-		contentBase: "./", 
-		historyApiFallback:true,
-		inline:true,
-		hot:true
-   	},
+	// devServer:{
+	// 	contentBase: "./", 
+	// 	historyApiFallback:true,
+	// 	inline:true,
+	// 	hot:true
+   	// },
 	optimization: {
 		runtimeChunk: {
 			name: "manifest"
