@@ -18,7 +18,7 @@ config.pcDirs.forEach((page) => {
 	const htmlPlugin = new HTMLWebpackPlugin({
 		filename: `${page}.html`,
 		template: path.resolve(__dirname, `./src/pc/${page}/${page}.html`),
-		chunks: [page, 'commons'],
+		chunks: [page, 'commons', 'manifest'],
 	});
 	HTMLPlugins.push(htmlPlugin);
 	Entries[page] = path.resolve(__dirname, `./src/pc/${page}/${page}.js`);
@@ -28,7 +28,7 @@ module.exports = {
 	entry: Entries,
 
 	output: {
-		filename: 'js/[name].[hash].js',
+		filename: 'js/[name].js?v=[hash]',
 		path: path.resolve(__dirname, "./dist/pc")
 	},
 
@@ -72,6 +72,11 @@ module.exports = {
 			use: ["file"]
 		}]
 	},
+	resolve:{
+		alias:{
+			'vue$':'vue/dist/vue.common.js'
+		}
+	},
 
 	plugins: [
 		new CleanWebpackPlugin(["dist"]),
@@ -95,7 +100,7 @@ module.exports = {
 			cacheGroups: {
 				commons: {
 					test: /[\\/]node_modules[\\/]/,
-					name: "vendor",
+					name: "commons",
 					chunks: "all"
 				}
 			}
