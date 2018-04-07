@@ -80,18 +80,19 @@ module.exports = {
 
 	plugins: [
 		new CleanWebpackPlugin(["dist"]),
-		//new webpack.HotModuleReplacementPlugin(),
+		new webpack.HotModuleReplacementPlugin(),
 		new MiniCssExtractPlugin({
-			filename: "css/[name].[hash].css"
+			filename: "css/[name].[hash].css",
+			chunkFilename:"[id].css"
 		}),
 		...HTMLPlugins
 	],
-	// devServer:{
-	// 	contentBase: "./", 
-	// 	historyApiFallback:true,
-	// 	inline:true,
-	// 	hot:true
-   	// },
+	devServer:{
+		contentBase: "./", 
+		historyApiFallback:true,
+		inline:true,
+		hot:true
+   	},
 	optimization: {
 		runtimeChunk: {
 			name: "manifest"
@@ -103,6 +104,12 @@ module.exports = {
 					name: "commons",
 					chunks: "all"
 				}
+				// styles:{
+				// 	name:'styles',
+				// 	test:/\.css$/,
+				// 	chunks:'all',
+				// 	enforce:true
+				// }
 			}
 		}
 	},
