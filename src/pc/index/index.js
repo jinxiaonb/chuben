@@ -9,7 +9,7 @@ import MyFoot from '../common/foot.vue';
 
 new Vue({
 	el:"#index",
-	components:{MyHead,Index,MyFoot}
+	components:{MyHead,MyFoot}
 });
 
 //const outWidth = document.documentElement.clientWidth || document.body.clientWidth;
