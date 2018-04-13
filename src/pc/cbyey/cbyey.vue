@@ -1,7 +1,7 @@
 <template>
     <div class="content">
         <div class="flex">
-            <div class="flex-1"><a href="javascript:void(0);" @click="toRedict('/cbyey.html','初本幼儿园')"><img :src="cbyey" alt="初本幼儿园"></a></div>
+            <div class="flex-1"><a href="javascript:void(0);"><img :src="cbyey" alt="初本幼儿园"></a></div>
         </div>
         <div class="flex">
             <div class="flex-1"><a href="javascript:void(0);"><img :src="cbr" alt="初本人"></a></div>
@@ -11,7 +11,7 @@
             <div class="flex-1"><a href="javascript:void(0);"><img :src="cbkt" alt="初本课堂"></a></div>
         </div>
         <div class="flex">
-            <div class="flex-1"><a href="javascript:void(0);"><img :src="about" alt="关于我们"></a></div>
+            <div class="flex-1"><a href="javascript:void(0);"><img :src="gywm" alt="关于我们"></a></div>
             <div class="flex-1"><a href="javascript:void(0);"><img :src="jzkt" alt="家长课堂"></a></div>
         </div>
     </div>
@@ -23,7 +23,7 @@ import cbkt from './img/cbkt.png';
 import cbr from './img/cbr.png';
 import cby from './img/cby.png';
 import cbyey from './img/cbyey.png';
-import about from './img/about.png';
+import gywm from './img/gywm.png';
 import jzkt from './img/jzkt.png';
 
 export default {
@@ -33,17 +33,8 @@ export default {
           cbr:cbr,
           cby:cby,
           cbkt:cbkt,
-          about:about,
+          gywm:gywm,
           jzkt:jzkt
-      }
-  },
-  created:function(){
-      localStorage.setItem("cb_title","首页");
-  },
-  methods:{
-      toRedict:function(cb_href,cb_title){
-          localStorage.setItem("cb_title",cb_title);
-          location.href = cb_href;
       }
   }
 }

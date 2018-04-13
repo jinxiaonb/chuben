@@ -484,6 +484,9 @@ html {
   a{
 	text-decoration: none;
   }
+  .flex{
+    display: flex;
+  }
 .flex-1{
     flex: 1;
 }

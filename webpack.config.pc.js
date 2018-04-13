@@ -57,7 +57,7 @@ module.exports = {
 			exclude: /node_modules/,
 			loader: 'vue'
 		}, {
-			test: /\.(png|svg|jpg|gif)$/,
+			test: /\.(png|svg|jpg|jpeg|gif)$/,
 			use: {
 				loader: 'file',
 				options: {

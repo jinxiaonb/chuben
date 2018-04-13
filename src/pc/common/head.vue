@@ -2,10 +2,10 @@
     <div id="header" class="header">
         <div class="search">
             <div class="flex-1 t-center"><i class="iconfont">&#xe6d1;</i></div>
-            <div class="flex-4" id="title">首页</div>
+            <div class="flex-4" id="title">{{ cb_title }}</div>
             <div class="flex-1 t-center"><i class="iconfont">&#xe607;</i></div>
         </div>
-        <div class="nav ">
+        <div class="nav hidden">
             <div class="flex-1">
                 <ul class="main-nav">
                     <li><a href="javascript:void(0);"><i class="iconfont">&#xe600;</i></a></li>
@@ -65,6 +65,7 @@
 export default {
   data(){
 		return {
+            cb_title:"首页",
             index:"首页",
             cbr:"初本人",
             cby:"初本园",
@@ -73,8 +74,11 @@ export default {
             about:"关于我们"
         }	
     },
-    created:function(){
-        console.log("....");
+    mounted:function(){
+        var _this = this;
+        if(localStorage.getItem("cb_title")){
+            _this.cb_title = localStorage.getItem("cb_title");
+        }
     },
     methods:{
         selectCur:function(){
@@ -88,9 +92,12 @@ export default {
         display: flex;
         background-color: #3F51B5;
         color: #fff;
-        font-size: 0.24rem;
-        height: 0.80rem;
-        line-height: 0.80rem;
+        font-size: 0.36rem;
+        height: 0.96rem;
+        line-height: 0.86rem;
+    }
+    .search i{
+        font-size: 0.48rem;
     }
    
     .nav{

@@ -1,5 +1,5 @@
 module.exports = {
-	pcDirs: ["index", "about"],
+	pcDirs: ["index","cbyey", "about"],
 	h5Dirs: ["index", "about"],
 	imgOutputPath:"img/"
 }

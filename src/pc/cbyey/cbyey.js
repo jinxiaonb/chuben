@@ -3,14 +3,13 @@ import "../common/common";
 
 import Vue from 'vue';
 import MyHead from '../common/head.vue';
-import Index from './index.vue';
-import MyFoot from '../common/foot.vue';
+import Cbyey from './cbyey.vue';
 
 
 
 new Vue({
-	el:"#index",
-	components:{MyHead,Index,MyFoot}
+	el:"#cbyey",
+	components:{MyHead,Cbyey}
 });
 
 //const outWidth = document.documentElement.clientWidth || document.body.clientWidth;
