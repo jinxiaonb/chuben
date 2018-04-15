@@ -57,7 +57,7 @@ module.exports = {
 			exclude: /node_modules/,
 			loader: 'vue'
 		}, {
-			test: /\.(png|svg|jpg|jpeg|gif)$/,
+			test: /\.(png|svg|jpg|jpeg|gif|ogg)$/,
 			use: {
 				loader: 'file',
 				options: {
@@ -74,7 +74,8 @@ module.exports = {
 	},
 	resolve:{
 		alias:{
-			'vue$':'vue/dist/vue.common.js'
+			'vue$':'vue/dist/vue.common.js',
+			'swiper$':'swiper/dist/js/swiper.min.js'
 		}
 	},
 

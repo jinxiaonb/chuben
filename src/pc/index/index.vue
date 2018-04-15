@@ -4,15 +4,15 @@
             <div class="flex-1"><a href="javascript:void(0);" @click="toRedict('/cbyey.html','初本幼儿园')"><img :src="cbyey" alt="初本幼儿园"></a></div>
         </div>
         <div class="flex">
-            <div class="flex-1"><a href="javascript:void(0);"><img :src="cbr" alt="初本人"></a></div>
-            <div class="flex-1"><a href="javascript:void(0);"><img :src="cby" alt="初本园"></a></div>
+            <div class="flex-1"><a href="javascript:void(0);" @click="toRedict('/cbr.html','初本人')"><img :src="cbr" alt="初本人"></a></div>
+            <div class="flex-1"><a href="javascript:void(0);" @click="toRedict('/cby.html','初本园')"><img :src="cby" alt="初本园"></a></div>
         </div>
         <div class="flex">
-            <div class="flex-1"><a href="javascript:void(0);"><img :src="cbkt" alt="初本课堂"></a></div>
+            <div class="flex-1"><a href="javascript:void(0);" @click="toRedict('/cbkt.html','初本课堂')"><img :src="cbkt" alt="初本课堂"></a></div>
         </div>
         <div class="flex">
-            <div class="flex-1"><a href="javascript:void(0);"><img :src="about" alt="关于我们"></a></div>
-            <div class="flex-1"><a href="javascript:void(0);"><img :src="jzkt" alt="家长课堂"></a></div>
+            <div class="flex-1"><a href="javascript:void(0);" @click="toRedict('/about.html','关于我们')"><img :src="about" alt="关于我们"></a></div>
+            <div class="flex-1"><a href="javascript:void(0);" @click="toRedict('/jzkt.html','家长课堂')"><img :src="jzkt" alt="家长课堂"></a></div>
         </div>
     </div>
     

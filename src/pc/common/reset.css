@@ -499,16 +499,19 @@ html {
 .flex-4{
     flex: 4;
 }
+.flex-5{
+  flex: 5;
+}
   .t-center{
     text-align: center;
   }
   @font-face {
     font-family: 'iconfont';  /* project id 618913 */
-    src: url('//at.alicdn.com/t/font_618913_2gcueoolw3qe61or.eot');
-    src: url('//at.alicdn.com/t/font_618913_2gcueoolw3qe61or.eot?#iefix') format('embedded-opentype'),
-    url('//at.alicdn.com/t/font_618913_2gcueoolw3qe61or.woff') format('woff'),
-    url('//at.alicdn.com/t/font_618913_2gcueoolw3qe61or.ttf') format('truetype'),
-    url('//at.alicdn.com/t/font_618913_2gcueoolw3qe61or.svg#iconfont') format('svg');
+    src: url('//at.alicdn.com/t/font_618913_r99o492mg8gmbo6r.eot');
+    src: url('//at.alicdn.com/t/font_618913_r99o492mg8gmbo6r.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_618913_r99o492mg8gmbo6r.woff') format('woff'),
+    url('//at.alicdn.com/t/font_618913_r99o492mg8gmbo6r.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_618913_r99o492mg8gmbo6r.svg#iconfont') format('svg');
   }
 .iconfont{
     font-family:"iconfont" !important;
