@@ -83,7 +83,6 @@ export default {
     },
     methods:{
         leftnav:function(){
-            console.log("....");
             let _this = this;
             _this.isHidden = !_this.isHidden;
         },
