@@ -6,10 +6,11 @@
 	"scripts": {
 		"pcbuild": "webpack --config webpack.config.pc.js",
 		"pcdev": "webpack-dev-server --inline --config webpack.config.pc.js --open",
-		"pcipdev": "webpack-dev-server --inline --config webpack.config.pc.js  --open --host 192.168.11.225",
+		"pcipdev": "webpack-dev-server --inline --config webpack.config.pc.js  --open --host 192.168.2.86",
 		"pchotdev": "webpack-dev-server --devtool eval --progress --colors --content-base dist  --config webpack.config.pc.js  --open",
 		"h5build": "webpack --config webpack.config.h5.js",
-		"h5dev": "webpack-dev-server --config webpack.config.h5.js --open"
+		"h5dev": "webpack-dev-server --config webpack.config.h5.js --open",
+		"h5ipdev": "webpack-dev-server --inline --config webpack.config.h5.js  --open --host 192.168.2.86"
 	},
 	"author": "jinxiao",
 	"license": "MIT",

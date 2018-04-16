@@ -1,10 +1,11 @@
 import "../common/common";
-import "./about.css";
+// import "./about.css";
 
 import Vue from 'vue';
+import MyHead from '../common/head.vue';
+import About from './about.vue';
 
-function about(){
-	console.log("about");
-}
-
-about();
+new Vue({
+	el:"#about",
+	components:{MyHead,About}
+});

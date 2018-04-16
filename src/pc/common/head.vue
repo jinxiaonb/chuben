@@ -1,7 +1,7 @@
 <template>
     <div id="header" class="header">
         <div class="search">
-            <div class="flex-1 t-center"><i class="iconfont">&#xe6d1;</i></div>
+            <div class="flex-1 t-center"><i class="iconfont" @click="leftnav">&#xe6d1;</i></div>
             <div class="flex-4" id="title">{{ cb_title }}</div>
             <div class="flex-1 t-center"><i class="iconfont">&#xe607;</i></div>
         </div>
@@ -81,6 +81,9 @@ export default {
         }
     },
     methods:{
+        leftnav:function(){
+            console.log("....");
+        },
         selectCur:function(){
             console.log("....");
         }

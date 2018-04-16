@@ -1,0 +1,14 @@
+
+.overflow{
+	overflow:hidden;
+}
+.f-left{
+	float: left;
+}
+.f-right{
+	float: right;
+}
+
+body{
+	font-size: 0.32rem;
+}
