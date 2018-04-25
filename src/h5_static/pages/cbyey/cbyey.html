@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+		<title>初本幼儿</title>
+		<link rel="stylesheet" href="/css/reset.css">
+		<link rel="stylesheet" href="/css/header.css">
+		<link rel="stylesheet" href="/css/cbyey.css">
+		<link rel="stylesheet" href="/js/swiper/swiper.min.css">
+	</head>
+
+	<body>
+		<div id="cbyey">
+			<div id="header" class="header"></div>
+				<template>
+					<div class="c-content">
+						<div class="content">
+							<div class="flex">
+								<div class="flex-1"><a href="javascript:void(0);"><img :src="cbyey" alt="初本幼儿园"></a></div>
+							</div>
+							<div class="intro">
+								<div class="flex-center pad-90"><img :src="cbyey" alt=""></div>
+								<div class="c-desc">
+									<h3 class="name">{{ basic.name }}</h3>
+									<p class="desc">{{ basic.desc1 }}</p>
+									<p class="desc">{{ basic.desc2 }}</p>
+									<p class="desc">{{ basic.desc3 }}</p>
+									<p class="desc">{{ basic.desc4 }}</p>
+									<h3 class="name-right">{{ basic.name }}</h3>
+									<p class="desc-right">{{ basic.desc }}</p>
+								</div>
+							</div>
+				
+							<div class="brand">
+								<div class="flex">
+									<div class="flex-1"><a href="javascript:void(0);"><img :src="cbyey" alt="初本幼儿园"></a></div>
+								</div>
+								<h3 class="name">{{ brand.name }}</h3>
+								<div class="c-desc">
+									<p class="desc">{{ brand.desc1 }}</p>
+									<p class="desc">{{ brand.desc2 }}</p>
+									<p class="desc">{{ brand.desc3 }}</p>
+									<p class="desc">{{ brand.desc4 }}</p>
+									<p class="desc">{{ brand.desc5 }}</p>
+								</div>
+							</div>
+							<h3 class="name">{{ listname }}</h3>
+							<div class="c-w">
+								<div class="swiper-container">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide" v-for="str in listImg" ><img :src="str.url" alt=""></div>
+									</div>
+									<div class="swiper-pagination swiper-pagination-white"></div>
+								</div>
+							</div>
+						</div>
+						<div class="btn-order"><button type="button">预约课程</button></div>
+					</div>
+				</template>
+		<script src="/js/jquery.js"></script>
+		<script src="/js/common.js"></script>
+		<script src="/js/vue.min.js"></script>
+		<script src="/js/swiper/swiper.min.js"></script>
+		<script src="/js/cbyey.js"></script>
+	</body>
+</html>

@@ -43,7 +43,7 @@ export default {
     height: 100%;
 }
 .swiper-container .swiper-slide{
-    background-position: cente;
+    background-position: center;
     background-size: cover;
     width: 100%;
     height: 100%;
