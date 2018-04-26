@@ -4,11 +4,31 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,user-scalable=no" />
 		<title>分园地址</title>
+		<link rel="stylesheet" href="/css/reset.css">
+		<link rel="stylesheet" href="/css/header.css">
+		<link rel="stylesheet" href="/css/fydz.css">
 	</head>
 	<body>
 		<div id="fydz">
-			<my-head></my-head>
-			<fydz></fydz>
+			<div id="header" class="header"></div>
+			<template>
+				<div class="content">
+					<div class="fydz">
+						<div class="flex">
+							<div class="flex-1"><img :src="fydzmap" alt="分园地址"></div>
+						</div>
+						<h3>分园地址</h3>
+						<p>杭州市中山北路611号地铁商务大厦2楼</p>
+						<div class="fydz-btn"><button type="button">预约课程</button></div>
+						<h4><a href="/pages/about/about.html"  title="关于我们">返回</a></h4>
+					</div>
+				</div>
+				
+			</template>
 		</div>
+		<script src="/js/jquery.js"></script>
+		<script src="/js/common.js"></script>
+		<script src="/js/vue.min.js"></script>
+		<script src="/js/fydz.js"></script>
 	</body>
 </html>

@@ -4,11 +4,25 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,user-scalable=no" />
 		<title>关于初本</title>
+		<link rel="stylesheet" href="/css/reset.css">
+		<link rel="stylesheet" href="/css/header.css">
+		<link rel="stylesheet" href="/css/about.css">
 	</head>
 	<body>
 		<div id="about">
-			<my-head></my-head>
-			<about></about>
+			<div id="header" class="header"></div>
+			<template>
+				<div class="content">
+					<div class="flex">
+						<div class="flex-1"><a href="/pages/fydz/fydz.html" title="分园地址"><img :src="fydz" alt="分园地址"></a></div>
+						<div class="flex-1"><a href="/pages/jtjs/jtjs.html" title="集团介绍"><img :src="jtjs" alt="集团介绍"></a></div>
+					</div>
+				</div>
+			</template>
 		</div>
+		<script src="/js/jquery.js"></script>
+		<script src="/js/common.js"></script>
+		<script src="/js/vue.min.js"></script>
+		<script src="/js/about.js"></script>
 	</body>
 </html>

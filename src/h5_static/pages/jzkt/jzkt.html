@@ -4,12 +4,72 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
 		<title>家长课堂</title>
+		<link rel="stylesheet" href="/css/reset.css">
+		<link rel="stylesheet" href="/css/header.css">
+		<link rel="stylesheet" href="/css/jzkt.css">
+		<link rel="stylesheet" href="/js/swiper/swiper.min.css">
 	</head>
 
 	<body>
 		<div id="jzkt">
-			<my-head></my-head>
-			<jzkt></jzkt>
+			<div id="header" class="header"></div>
+			<template>
+				<div class="c-content">
+					<div class="content">
+						<div class="flex">
+							<div class="flex-1"><a href="javascript:void(0);"><img :src="jzkt" alt="家长课堂"></a></div>
+						</div>
+						<div class="intro">
+							<div class="flex c-intro" v-for="item in basic">
+								<div class="flex-3"><img :src="item.left" alt="初本园"></div>
+								<div class="c-desc flex-5">
+									<h3 class="name">{{ item.title }}</h3>
+									<p class="desc">{{ item.desc }}</p>
+								</div>
+							</div>
+						</div>
+						<div class="zjtd">
+							<h3 class="main-title">专家团队</h3>
+							<div class="c-w">
+								<div class="swiper-container">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide" v-for="item in listImg">
+											<div class="self-slide">
+												<div class="self-common self-left">
+													<div class="flex"><img :src="item.img" alt=""></div>
+													<h3 class="title">{{ item.title }}</h3>
+													<p class="desc">{{ item.desc }}</p>
+												</div>
+												<div class="self-common self-slide">
+													<div class="flex"><img :src="item.img2" alt=""></div>
+													<h3 class="title">{{ item.title2 }}</h3>
+													<p class="desc">{{ item.desc2 }}</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-pagination swiper-pagination-white"></div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="stkc">
+							<h3 class="main-title">试听课程</h3>
+							<div class="stkc-video">
+								<video  controls="controls" id="stkc-movie">
+									<source :src="movieogg" type="video/ogg">
+									<source :src="moviemp4" type="video/mp4">
+								</video>
+							</div>
+						</div>
+					</div>
+				</div>
+			</template>
 		</div>
+		<script src="/js/jquery.js"></script>
+		<script src="/js/common.js"></script>
+		<script src="/js/vue.min.js"></script>
+		<script src="/js/swiper/swiper.min.js"></script>
+		<script src="/js/jzkt.js"></script>
 	</body>
 </html>

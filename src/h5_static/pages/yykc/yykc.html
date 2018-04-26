@@ -4,11 +4,45 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,user-scalable=no" />
 		<title>分园地址</title>
+		<link rel="stylesheet" href="/css/reset.css">
+		<link rel="stylesheet" href="/css/header.css">
+		<link rel="stylesheet" href="/css/yykc.css">
 	</head>
 	<body>
 		<div id="yykc">
-			<my-head></my-head>
-			<yykc></yykc>
+			<div id="header" class="header"></div>
+			<template>
+				<div class="content">
+					<div class="fydz">
+						<div class="flex">
+							<div class="flex-1"><img :src="seyy" alt="少儿英语"></div>
+						</div>
+			
+						<div class="kctj-form">
+							<div class="flex">
+								<div class="flex-5"><input type="text" placeholder="姓名"></div>
+								<div class="flex-1"><i class="iconfont">&#xe605;</i></div>
+							</div>
+							<div class="flex">
+								<div class="flex-5"><input type="text" placeholder="电话"></div>
+								<div class="flex-1"><i class="iconfont">&#xe605;</i></div>
+							</div>
+							<div class="flex">
+								<div class="flex-5"><input type="text" placeholder="孩子年龄"></div>
+								<div class="flex-1"><i class="iconfont">&#xe605;</i></div>
+							</div>
+						</div>
+			
+						<div class="fydz-btn"><button type="button">预约课程</button></div>
+						<h4><a href="/pages/about/about.html"  title="关于我们">返回</a></h4>
+					</div>
+				</div>
+				
+			</template>
 		</div>
+		<script src="/js/jquery.js"></script>
+		<script src="/js/common.js"></script>
+		<script src="/js/vue.min.js"></script>
+		<script src="/js/yykc.js"></script>
 	</body>
 </html>

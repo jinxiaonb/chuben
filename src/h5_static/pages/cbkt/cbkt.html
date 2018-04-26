@@ -4,12 +4,84 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
 		<title>初本课堂</title>
+		<link rel="stylesheet" href="/css/reset.css">
+		<link rel="stylesheet" href="/css/header.css">
+		<link rel="stylesheet" href="/css/cbkt.css">
+		<link rel="stylesheet" href="/js/swiper/swiper.min.css">
 	</head>
 
 	<body>
 		<div id="cbkt">
-			<my-head></my-head>
-			<cbkt></cbkt>
+			<div id="header" class="header"></div>
+			<template>
+				<div class="c-content">
+					<div class="content">
+						<div class="flex">
+							<div class="flex-1"><a href="javascript:void(0);"><img :src="cbkt" alt="初本幼儿园"></a></div>
+						</div>
+			
+						<div class="brand">
+							<h3 class="name">{{ ckjs.name }}</h3>
+							<div class="c-desc">
+								<p class="desc">{{ ckjs.desc }}</p>
+							</div>
+							<div class="c-detail cbkt">
+								<div class="flex" v-for="item in ckjs.list">
+									<div class="flex-1"><img :src="item.img" :alt="item.name"><p>{{item.name}}</p></div>
+									<div class="flex-1"><img :src="item.img1" :alt="item.name1"><p>{{item.name1}}</p></div>
+								</div>
+								<div class="flex">
+									<div class="flex-1"><img :src="ckjs.zlqm.img" :alt="ckjs.zlqm.img"><p>{{ckjs.zlqm.name}}</p></div>
+								</div>
+							</div>
+						</div>
+						<div class="kctj">
+							<h3 class="name">{{ kctj.name }}</h3>
+							<div class="kctj-form">
+								<div class="flex">
+									<div class="flex-5"><input type="text" placeholder="姓名"></div>
+									<div class="flex-1"><i class="iconfont">&#xe605;</i></div>
+								</div>
+								<div class="flex">
+									<div class="flex-6"><span>出生年月：</span><select class="year" name="year" id="year"><option value="2017">2017年</option><option value="2018">2018年</option><option value="2019">2019年</option></select><select class="flex-3" name="month" id="month"><option value="1">1月份</option><option value="2">2月份</option><option value="3">3月份</option><option value="4">4月份</option><option value="5">5月份</option><option value="6">6月份</option><option value="7">7月份</option><option value="8">8月份</option><option value="9">9月份</option><option value="10">10月份</option><option value="11">11月份</option><option value="12">12月份</option></select></div>
+								</div>
+								<div class="flex">
+									<div class="flex-1"><button type="button">{{ kctj.name }}</button></div>
+								</div>
+							</div>
+						
+							<div class="yykc">
+								<div class="flex">
+									<div class="flex-1"><img :src="yykc.img " alt="yykc.name"></div>
+								</div>
+								<div class="flex">
+									<div class="flex-1">
+										<p>{{ yykc.desc }}</p>
+									</div>
+								</div>
+								<div class="flex btn-flex">
+									<div class="flex-1"><button type="button">{{ yykc.name }}</button></div>
+								</div>
+								<h4><a href="javascript:void(0);">返回</a></h4>
+							</div>
+						</div>
+						<h3 class="name">{{ listname }}</h3>
+						<div class="c-w">
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide" v-for="str in listImg" ><img :src="str.url" alt=""></div>
+								</div>
+								<div class="swiper-pagination swiper-pagination-white"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</template>
 		</div>
+		<script src="/js/jquery.js"></script>
+		<script src="/js/common.js"></script>
+		<script src="/js/vue.min.js"></script>
+		<script src="/js/swiper/swiper.min.js"></script>
+		<script src="/js/cbkt.js"></script>
 	</body>
 </html>

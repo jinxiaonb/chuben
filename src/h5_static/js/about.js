@@ -1,11 +1,16 @@
-import "../common/common";
-// import "./about.css";
-
-import Vue from 'vue';
-import MyHead from '../common/head.vue';
-import About from './about.vue';
 
 new Vue({
 	el:"#about",
-	components:{MyHead,About}
+	data: function(){
+		return {
+			fydz:'/img/about/fydz.png',
+			jtjs:'/img/about/jtjs.png',
+		}
+	},
+	created:function(){
+		localStorage.setItem("cb_title","关于我们");
+	},
+	methods:{
+		
+	}
 });

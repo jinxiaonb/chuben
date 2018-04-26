@@ -4,6 +4,7 @@ $(document).ready(function(){
     document.documentElement.style.fontSize = (idealViewWidth / BASICVALUE) * 100 + 'px';
 
 
+
     $.ajax({
         type:"get",
         url:"/pages/header.html",
@@ -12,4 +13,15 @@ $(document).ready(function(){
             $("#header").html(res);
         }
     });
+
+
+    $(document).on("touchstart","#leftnav",function(){
+        if($(".nav").hasClass("hidden")){
+            $(".nav").removeClass("hidden");
+        }else{
+            $(".nav").addClass("hidden");
+        }
+    });
+
+
 });

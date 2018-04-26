@@ -1,22 +1,21 @@
-import "../common/common";
-//import "./index.css";
-
-import Vue from 'vue';
-import MyHead from '../common/head.vue';
-import Cby from './cby.vue';
-
 
 
 new Vue({
 	el:"#cby",
-	components:{MyHead,Cby}
+	data: function(){
+		return {
+			basic:[{
+			  title:"探 索",
+			  left:'/img/cby/left.jpeg',
+			  desc:"由浙江省特级教师、原浙师大幼教集团总园长、被坊间誉为“首席园长”的王芳园长掌舵，课程研发专家顾问来自北师大、南师大、华师大、浙师大等国内知名高校。",
+			},{
+			  title:"办学理念",
+			  left:'/img/cby/left.jpeg',
+			  desc:"由浙江省特级教师、原浙师大幼教集团总园长、被坊间誉为“首席园长”的王芳园长掌舵，课程研发专家顾问来自北师大、南师大、华师大、浙师大等国内知名高校。",
+			},],
+			cby:'/img//cby/cby.jpeg',
+			mrkc:'/img/cby/cby.jpeg'
+		}
+	}
 });
 
-//const outWidth = document.documentElement.clientWidth || document.body.clientWidth;
-//const innerWidth = window.innerWidth;
-//console.log(outWidth,innerWidth);
-// function index(){
-// 	console.log("index");
-// }
-
-// index();

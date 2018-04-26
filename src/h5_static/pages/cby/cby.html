@@ -3,13 +3,41 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
-		<title>初本人</title>
+		<title>初本园</title>
+		<link rel="stylesheet" href="/css/reset.css">
+		<link rel="stylesheet" href="/css/header.css">
+		<link rel="stylesheet" href="/css/cby.css">
 	</head>
 
 	<body>
 		<div id="cby">
-			<my-head></my-head>
-			<cby></cby>
+			<div id="header" class="header"></div>
+			<template>
+				<div class="c-content">
+					<div class="content">
+						<div class="flex">
+							<div class="flex-1"><a href="javascript:void(0);"><img :src="cby" alt="初本园"></a></div>
+						</div>
+						<div class="intro">
+							<div class="flex c-intro" v-for="item in basic">
+								<div class="flex-3"><img :src="item.left" alt="初本园"></div>
+								<div class="c-desc flex-5">
+									<h3 class="name">{{ item.title }}</h3>
+									<p class="desc">{{ item.desc }}</p>
+								</div>
+							</div>
+						</div>
+						<div class="mrkc">
+							<h3 class="name">每日课程</h3>
+							<img :src="mrkc" alt="">
+						</div>
+					</div>
+				</div>
+			</template>
 		</div>
+		<script src="/js/jquery.js"></script>
+		<script src="/js/common.js"></script>
+		<script src="/js/vue.min.js"></script>
+		<script src="/js/cby.js"></script>
 	</body>
 </html>

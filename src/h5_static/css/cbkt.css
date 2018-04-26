@@ -1,0 +1,195 @@
+
+.content{
+    width: 7rem;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+.content .flex{
+    margin: 0.25rem 0;
+}
+.intro{
+    box-shadow: 0px 0px 4px #ccc;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+.brand{
+    box-shadow: 0px 0px 4px #ccc;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    background-color: #fafafa;
+}
+.kctj{
+    box-shadow: 0px 0px 4px #ccc;
+    border-radius: 4px;
+    background-color: #fafafa;
+    padding-bottom: .5rem;
+}
+.kctj-form{
+    margin: .5rem .25rem;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: .5rem 0;
+}
+.kctj-form input{
+    outline: none;
+    line-height: .5rem;
+    color: #666;
+    border: none;
+    font-size: .23rem;
+}
+.kctj-form .flex{
+    line-height: .5rem;
+    padding: .2rem .6rem;
+}
+.kctj-form i{
+    font-size: .6rem;
+    color: #999;
+    text-align: right;
+}
+.kctj-form button,.yykc button{
+    background-image: linear-gradient(-235deg, #FF8960 16%, #FF62A5 100%);
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 1rem;
+    border-radius: .6rem;
+    border:none;
+}
+.yykc .btn-flex{
+    padding:0 .6rem;
+    margin: .6rem 0;
+}
+.yykc{
+    background-color: #fff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin: 0 .5rem;
+}
+.yykc p{
+    color: #666;
+    line-height: .5rem;
+    padding: 0 .5rem;
+}
+.yykc h4{
+    text-align: center;
+    height: 1rem;
+    color: #999;
+}
+.yykc h4 a{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    color: #999;
+}
+.content img{
+    width: 100%;
+    height: 100%;
+}
+.c-detail{
+    text-align: center;
+}
+.cbkt .flex{
+    padding-bottom: 1rem;
+}
+.c-detail p{
+    height: 1rem;
+    line-height: 1rem;
+    color: #9b9b9b;
+}
+.c-detail img{
+    width: 80px;
+    height: 60px;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+.pad-90{
+    padding-top: 1.5rem;
+}
+.flex-center img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+}
+.c-desc{
+    padding: 0 0.4rem;
+    padding-bottom: 1rem;
+    line-height: .5rem;
+}
+.c-desc p{
+    color: #666;
+}
+.name{
+    text-align: center;
+    line-height: 1rem;
+    font-size: 0.5rem;
+    color: #E91E63;
+    padding: .5rem 0 .3rem 0;
+}
+.name-right{
+    text-align: right;
+    line-height: .6rem;
+}
+.desc-right{
+    text-align: right;
+    height: .8rem;
+}
+
+.btn-order{
+    height: 1rem;
+    line-height: 1rem;
+    background-image: linear-gradient(-235deg, #FF8960 16%, #FF62A5 100%);
+    color: #fff;
+    text-align: center;
+    margin-top: 1rem;
+}
+.btn-order button{
+    color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.kctj-form select{
+    border: 1px solid #dedede;
+    padding: .15rem .2rem;
+    color: #666;
+    border-radius: 4px;
+}
+.kctj-form .year{
+    margin-right: .3rem;
+}
+.kctj-form span{
+    font-size: .23rem;
+    color: #666;
+}
+
+
+
+.c-w{
+    margin: 0 0.25rem;
+}
+.swiper-container{
+    width: 100%;
+    height: 4rem;
+}
+.swiper-container .swiper-wrapper{
+    width: 100%;
+    height: 100%;
+}
+.swiper-container .swiper-slide{
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+}
+.swiper-container .swiper-pagination-bullet{
+    width: 0.1rem;
+    height: 0.1rem;
+    display: inline-block;
+    background: #7c5e53;
+}
