@@ -46,14 +46,17 @@
     color: #999;
     text-align: right;
 }
-.kctj-form button,.yykc button{
+.kctj-form a,.yykc .btn-flex a{
+    display: inline-block;
     background-image: linear-gradient(-235deg, #FF8960 16%, #FF62A5 100%);
     color: #fff;
     text-align: center;
     width: 100%;
     height: 1rem;
+    line-height: 1rem;
     border-radius: .6rem;
     border:none;
+    margin-bottom: 30px;
 }
 .yykc .btn-flex{
     padding:0 .6rem;

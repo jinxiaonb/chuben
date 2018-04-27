@@ -19,7 +19,7 @@
 							<div class="flex">
 								<div class="flex-1"><a href="javascript:void(0);"><img :src="cbyey" alt="初本幼儿园"></a></div>
 							</div>
-							<div class="intro">
+							<div class="intro" id="intro">
 								<div class="flex-center pad-90"><img :src="cbyey" alt=""></div>
 								<div class="c-desc">
 									<h3 class="name">{{ basic.name }}</h3>
@@ -31,8 +31,8 @@
 									<p class="desc-right">{{ basic.desc }}</p>
 								</div>
 							</div>
-				
-							<div class="brand">
+							<!-- <a href="javascript:void(0);" @click="changeToBrand">changeToBrand</a> -->
+							<div class="brand" id="brand" ref="brand">
 								<div class="flex">
 									<div class="flex-1"><a href="javascript:void(0);"><img :src="cbyey" alt="初本幼儿园"></a></div>
 								</div>
@@ -45,7 +45,7 @@
 									<p class="desc">{{ brand.desc5 }}</p>
 								</div>
 							</div>
-							<h3 class="name">{{ listname }}</h3>
+							<h3 class="name" id="hornor">{{ listname }}</h3>
 							<div class="c-w">
 								<div class="swiper-container">
 									<div class="swiper-wrapper">
@@ -55,7 +55,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="btn-order"><button type="button">预约课程</button></div>
+						<div class="btn-order"><a href="/pages/yykc/yykc.html">预约课程</a></div>
 					</div>
 				</template>
 		<script src="/js/jquery.js"></script>

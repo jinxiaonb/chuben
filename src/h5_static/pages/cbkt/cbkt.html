@@ -46,11 +46,14 @@
 									<div class="flex-6"><span>出生年月：</span><select class="year" name="year" id="year"><option value="2017">2017年</option><option value="2018">2018年</option><option value="2019">2019年</option></select><select class="flex-3" name="month" id="month"><option value="1">1月份</option><option value="2">2月份</option><option value="3">3月份</option><option value="4">4月份</option><option value="5">5月份</option><option value="6">6月份</option><option value="7">7月份</option><option value="8">8月份</option><option value="9">9月份</option><option value="10">10月份</option><option value="11">11月份</option><option value="12">12月份</option></select></div>
 								</div>
 								<div class="flex">
-									<div class="flex-1"><button type="button">{{ kctj.name }}</button></div>
+									<div class="flex-6"><span>类型选择{{pattern}}：</span><select class="pattern" v-model="pattern" name="pattern" id="pattern"><option value="1">少儿英语1</option><option value="2">少儿英语2</option><option value="3">少儿英语3</option></select></div>
+								</div>
+								<div class="flex hidden">
+									<div class="flex-1"><a href="/pages/yykc/yykc.html">{{ kctj.name }}</a></div>
 								</div>
 							</div>
 						
-							<div class="yykc">
+							<div class="yykc select1" v-bind:class="pattern!=1?'hidden':''">
 								<div class="flex">
 									<div class="flex-1"><img :src="yykc.img " alt="yykc.name"></div>
 								</div>
@@ -60,9 +63,37 @@
 									</div>
 								</div>
 								<div class="flex btn-flex">
-									<div class="flex-1"><button type="button">{{ yykc.name }}</button></div>
+									<div class="flex-1"><a href="/pages/yykc/yykc.html">{{ yykc.name }}</a></div>
 								</div>
-								<h4><a href="javascript:void(0);">返回</a></h4>
+								<h4 class="hidden"><a href="javascript:void(0);">返回</a></h4>
+							</div>
+							<div class="yykc select2 " v-bind:class="pattern!=2?'hidden':''">
+								<div class="flex">
+									<div class="flex-1"><img :src="yykc.img " alt="yykc.name"></div>
+								</div>
+								<div class="flex">
+									<div class="flex-1">
+										<p>{{ yykc.desc }}</p>
+									</div>
+								</div>
+								<div class="flex btn-flex">
+									<div class="flex-1"><a href="/pages/yykc/yykc.html">{{ yykc.name }}</a></div>
+								</div>
+								<h4 class="hidden"><a href="javascript:void(0);">返回</a></h4>
+							</div>
+							<div class="yykc select3 " v-bind:class="pattern!=3?'hidden':''">
+								<div class="flex">
+									<div class="flex-1"><img :src="yykc.img " alt="yykc.name"></div>
+								</div>
+								<div class="flex">
+									<div class="flex-1">
+										<p>{{ yykc.desc }}</p>
+									</div>
+								</div>
+								<div class="flex btn-flex">
+									<div class="flex-1"><a href="/pages/yykc/yykc.html">{{ yykc.name }}</a></div>
+								</div>
+								<h4 class="hidden"><a href="javascript:void(0);">返回</a></h4>
 							</div>
 						</div>
 						<h3 class="name">{{ listname }}</h3>

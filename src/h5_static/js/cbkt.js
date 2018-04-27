@@ -3,6 +3,7 @@ new Vue({
 	el:"#cbkt",
 	data: function(){
 		return {
+			pattern:"1",
 			cbkt:'/img/cbkt/cbkt.png',
 			listname:"精彩瞬间",
 			listImg:[{
@@ -59,5 +60,8 @@ new Vue({
               el: '.swiper-pagination',
               }
         });
-    }
+	},
+	updated:function(){
+		//console.log(this.pattern);
+	}
 });

@@ -29,7 +29,8 @@ new Vue({
                 desc5:"致力于打造一所在民办学前教育领域的保育园范本",
             },
   
-            cbyey:"/img/cbyey/cbyey.png"
+            cbyey:"/img/cbyey/cbyey.png",
+            cur:""
         }
     },
     mounted(){
@@ -43,5 +44,30 @@ new Vue({
               el: '.swiper-pagination',
               }
         });
+        //this.test();
+    },
+    created:function(){
+    },
+
+    updated:function(){
+        
+    },
+    methods:{
+        changeToIntro:function(){
+            $("html,body").animate({scrollTop:280}, 1000);
+        },
+        changeToBrand:function(){
+            // this.cur = "brand";
+            // console.log(this.cur);
+            // var anchor = this.$el.querySelector("#intro");
+            // console.log(anchor.offsetTop);
+            // document.body.scrollTop = anchor.offsetTop;
+            // document.documentElement.scrollTop = anchor.offsetTop;
+            $("html,body").animate({scrollTop:1478}, 1000);
+        },
+        changeToHornor:function(){
+            //2233
+            $("html,body").animate({scrollTop:2233}, 1000);
+        }
     }
 });
