@@ -61,6 +61,9 @@ new Vue({
               }
         });
 	},
+	created:function(){
+		localStorage.setItem("title","初本课堂");
+	},
 	updated:function(){
 		//console.log(this.pattern);
 	}

@@ -13,23 +13,23 @@
 		<div id="cbr">
 			<div id="header" class="header"></div>
 			<template>
-					<div class="c-content">
-						<div class="content">
-							<div class="flex">
-								<div class="flex-1"><a href="javascript:void(0);"><img :src="ad" alt=""></a></div>
-							</div>
-							<div class="c-intro">
-								<div class="intro" v-for="item in basic">
-									<div class="flex-center pad-90"><img :src="item.avator" alt=""></div>
-									<div class="c-desc">
-										<h3 class="name">{{ item.title }}</h3>
-										<p class="desc">{{ item.desc }}</p>
-									</div>
+				<div class="c-content">
+					<div class="content">
+						<div class="flex">
+							<div class="flex-1"><a href="javascript:void(0);"><img :src="ad" alt=""></a></div>
+						</div>
+						<div class="c-intro">
+							<div class="intro" v-for="item in basic">
+								<div class="flex-center pad-90"><img :src="item.avator" alt=""></div>
+								<div class="c-desc">
+									<h3 class="name">{{ item.title }}</h3>
+									<p class="desc">{{ item.desc }}</p>
 								</div>
 							</div>
 						</div>
 					</div>
-				</template>
+				</div>
+			</template>
 		</div>
 		<script src="/js/jquery.js"></script>
 		<script src="/js/common.js"></script>

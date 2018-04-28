@@ -47,12 +47,46 @@ new Vue({
         //this.test();
     },
     created:function(){
+        //console.log("created");
+        localStorage.setItem("title","初本幼儿园");
+        //$("#title").text("初本幼儿园");
+        var t = this.getUrl().t;
+        console.log(t);
+        if(t=="intro"){
+            this.changeToIntro();
+        }else if(t=="brand"){
+            this.changeToBrand();
+        }else if(t=="hornor"){
+            this.changeToHornor();
+        }else{
+
+        }
     },
 
     updated:function(){
         
     },
     methods:{
+        getUrl:function(){
+            var _search = location.search,
+                innerpara = {};
+
+            _search = (_search.indexOf("?") >= 0) ? _search.substring(1) : _search;
+            if (_search.indexOf("&") >= 0) {
+                _search = _search.split("&");
+                var _len = _search.length;
+                for (var i = 0; i < _len; i++) {
+                    var item = _search[i];
+                    item = item.indexOf("=") >= 0 ? item.split("=") : "";
+                    innerpara[item[0]] = item[1];
+                }
+            } else {
+                var item = _search.indexOf("=") >= 0 ? _search.split("=") : "";
+                innerpara[item[0]] = item[1];
+            }
+            return innerpara;
+            console.log(innerpara);
+        },
         changeToIntro:function(){
             $("html,body").animate({scrollTop:280}, 1000);
         },

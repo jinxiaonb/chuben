@@ -8,7 +8,7 @@ new Vue({
 		}
 	},
 	created:function(){
-		localStorage.setItem("cb_title","关于我们");
+		localStorage.setItem("title","关于我们");
 	},
 	methods:{
 		

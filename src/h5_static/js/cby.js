@@ -16,6 +16,9 @@ new Vue({
 			cby:'/img//cby/cby.jpeg',
 			mrkc:'/img/cby/cby.jpeg'
 		}
+	},
+	created:function(){
+		localStorage.setItem("title","初本园");
 	}
 });
 

@@ -43,6 +43,9 @@ new Vue({
 			
 		}
 	},
+	created:function(){
+		localStorage.setItem("title","家长课堂");
+	},
 	mounted(){
 		console.log('mounted',this);
 		var swiper = new Swiper('.swiper-container',{

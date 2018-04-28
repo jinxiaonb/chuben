@@ -1,3 +1,9 @@
+.f-search{
+    position: fixed;
+    top: 0;
+    z-index: 201;
+    width: 100%;
+}
 .search{
     display: flex;
     background-color: #3F51B5;
@@ -14,9 +20,11 @@
     width: 6rem;
     display: flex;
     background-color: #fafafa;
-    position: absolute;
+    position: fixed;
     border-bottom: 1px solid #dedede;
-    z-index: 101;
+    border-right: 1px solid #dedede;
+    z-index:201;
+    top: 0.96rem;
 }
 .nav .main-nav li{
     text-align: center;
@@ -34,12 +42,11 @@
     height: 100%;
     display: inline-block;
 }
-.left-nav{
+.right-nav{
     border-right: 1px solid #dedede;
 }
 .sec-list{
     padding-left: 0.4rem;
-    border-left: 1px solid #dedede;
 }
 .sec-list h3 {
     font-size: 0.24rem;
@@ -61,4 +68,8 @@
 }
 .sec-nav em{
     color: #00f;
+}
+
+.content{
+    margin-top: 1.25rem!important;
 }
