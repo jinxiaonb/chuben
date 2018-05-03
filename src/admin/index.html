@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+		<title>报名列表页</title>
+		<link rel="stylesheet" href="./css/reset.css">
+		<link rel="stylesheet" href="./css/index.css">
+	</head>
+
+	<body>
+		<div id="index">
+			<div class="content">
+                <h3>学员报名信息列表</h3>
+                <div class="search">
+                    <input type="text" value="" ref="searchkey" placeholder="请输入要搜索的名字或手机号"><button type="button" @click="search">搜索</button>
+                </div>
+                <template>
+                    
+                <table>
+                    <thead>
+                        <th>姓名</th>
+                        <th>手机号</th>
+                        <th>出生年份</th>
+                        <th>出生月份</th>
+                        <th>操作</th>
+                    </thead>
+                    <tbody>
+                        <tr v-for="item in list">
+                            <td>{{item.name}}</td>
+                            <td>{{item.phone}}</td>
+                            <td>{{item.year}}</td>
+                            <td>{{item.month}}</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="5"><a href="javascript:void(0);" @click="prev" class="prev page-btn">上一页</a><a href="javascript:void(0);" @click="next" class="next page-btn">下一页</a></td>
+                        </tr>
+                    </tfoot>
+                </table>
+                </template>
+			</div>
+		</div>
+        <script src="./js/vue.min.js"></script>
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/index.js"></script>
+	</body>
+</html>
