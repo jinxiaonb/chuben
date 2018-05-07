@@ -29,27 +29,29 @@
 							</div>
 						</div>
 						<div class="zjtd">
-							<h3 class="main-title">专家团队</h3>
+							<h3 class="main-title hidden">专家团队</h3>
 							<div class="c-w">
 								<div class="swiper-container">
 									<div class="swiper-wrapper">
 										<div class="swiper-slide" v-for="item in listImg">
 											<div class="self-slide">
+												<h3 class="main-title">{{item.maintitle}}</h3>
+												<h4 class="sub-title">{{item.subtitle}}</h4>
 												<div class="self-common self-left">
-													<div class="flex"><img :src="item.img" alt=""></div>
+													<div class="jimg"><img :src="item.img" alt=""></div>
 													<h3 class="title">{{ item.title }}</h3>
 													<div class="desc">
-														<p>{{ item.detail1.d1 }}</p>
-														<p>{{ item.detail1.d2 }}</p>
-														<p>{{ item.detail1.d3 }}</p>
-														<p>{{ item.detail1.d4 }}</p>
-														<p>{{ item.detail1.d5 }}</p>
-														<p>{{ item.detail1.d6 }}</p>
-														<p>{{ item.detail1.d7 }}</p>
-														<p>{{ item.detail1.d8 }}</p>
+														<p>{{ item.detail.d1 }}</p>
+														<p>{{ item.detail.d2 }}</p>
+														<p>{{ item.detail.d3 }}</p>
+														<p>{{ item.detail.d4 }}</p>
+														<p>{{ item.detail.d5 }}</p>
+														<p>{{ item.detail.d6 }}</p>
+														<p>{{ item.detail.d7 }}</p>
+														<p>{{ item.detail.d8 }}</p>
 													</div>
 												</div>
-												<div class="self-common self-slide">
+												<!-- <div class="self-common self-slide">
 													<div class="flex"><img :src="item.img2" alt=""></div>
 													<h3 class="title">{{ item.title2 }}</h3>
 													<div class="desc">
@@ -62,7 +64,7 @@
 															<p>{{ item.detail2.d7 }}</p>
 															<p>{{ item.detail2.d8 }}</p>
 													</div>
-												</div>
+												</div> -->
 											</div>
 										</div>
 									</div>
