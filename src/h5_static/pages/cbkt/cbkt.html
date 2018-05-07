@@ -21,9 +21,9 @@
 						</div>
 			
 						<div class="brand">
-							<h3 class="name">{{ ckjs.name }}</h3>
+							<!-- <h3 class="name">{{ ckjs.name }}</h3> -->
 							<div class="c-desc">
-								<p class="desc">{{ ckjs.desc }}</p>
+								<p class="desc">{{ ckjs.ktjs }}</p>
 							</div>
 							<div class="c-detail cbkt">
 								<div class="flex" v-for="item in ckjs.list">
@@ -36,17 +36,25 @@
 							</div>
 						</div>
 						<div class="kctj">
-							<h3 class="name">{{ kctj.name }}</h3>
+							<h3 class="name">{{ ckjs.name }}</h3>
+							<div class="c-desc">
+								<p class="desc">{{ ckjs.desc }}</p>
+							</div>
+							<!-- <h3 class="name">{{ kctj.name }}</h3> -->
 							<div class="kctj-form">
 								<div class="flex">
-									<div class="flex-5"><input type="text" placeholder="姓名"></div>
-									<div class="flex-1"><i class="iconfont">&#xe619;</i></div>
+									<div class="flex-5"><input type="text" placeholder="姓名" ref="babyname"></div>
+									<div class="flex-1"><i class="iconfont" @click="cancelName">&#xe619;</i></div>
 								</div>
 								<div class="flex">
-									<div class="flex-6"><span>出生年月：</span><select class="year" name="year" id="year"><option value="2017">2017年</option><option value="2018">2018年</option><option value="2019">2019年</option></select><select class="flex-3" name="month" id="month"><option value="1">1月份</option><option value="2">2月份</option><option value="3">3月份</option><option value="4">4月份</option><option value="5">5月份</option><option value="6">6月份</option><option value="7">7月份</option><option value="8">8月份</option><option value="9">9月份</option><option value="10">10月份</option><option value="11">11月份</option><option value="12">12月份</option></select></div>
+									<div class="flex-5"><input type="number" placeholder="手机号" ref="phone"></div>
+									<div class="flex-1"><i class="iconfont" @click="cancelPhone">&#xe619;</i></div>
 								</div>
 								<div class="flex">
-									<div class="flex-6"><span>类型选择{{pattern}}：</span><select class="pattern" v-model="pattern" name="pattern" id="pattern"><option value="1">少儿英语1</option><option value="2">少儿英语2</option><option value="3">少儿英语3</option></select></div>
+									<div class="flex-6"><span>出生年月：</span><select class="year" name="year" id="year" ref="year"><option value="2017">2017年</option><option value="2018">2018年</option><option value="2019">2019年</option></select><select class="flex-3" name="month" id="month" ref="month"><option value="1">1月份</option><option value="2">2月份</option><option value="3">3月份</option><option value="4">4月份</option><option value="5">5月份</option><option value="6">6月份</option><option value="7">7月份</option><option value="8">8月份</option><option value="9">9月份</option><option value="10">10月份</option><option value="11">11月份</option><option value="12">12月份</option></select></div>
+								</div>
+								<div class="flex">
+									<div class="flex-6"><span>类型选择：</span><select class="pattern" v-model="pattern" name="pattern" id="pattern" ref="pattern"><option value="1">少儿英语</option></select></div>
 								</div>
 								<div class="flex hidden">
 									<div class="flex-1"><a href="/pages/yykc/yykc.html">{{ kctj.name }}</a></div>
@@ -63,7 +71,7 @@
 									</div>
 								</div>
 								<div class="flex btn-flex">
-									<div class="flex-1"><a href="/pages/yykc/yykc.html">{{ yykc.name }}</a></div>
+									<div class="flex-1"><a href="javascript:void(0);" @click="yykcPattern1">{{ yykc.name }}</a></div>
 								</div>
 								<h4 class="hidden"><a href="javascript:void(0);">返回</a></h4>
 							</div>

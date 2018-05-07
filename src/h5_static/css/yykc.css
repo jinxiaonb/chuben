@@ -60,7 +60,18 @@ body{
 }
 .kctj-form .flex{
     line-height: .5rem;
-    padding: .2rem .6rem;
+    padding: .2rem 0rem;
+}
+.kctj-form span{
+    font-size: 12px;
+}
+.kctj-form select{
+    margin-right: .2rem;
+    color: #666;
+    padding: .1rem 0.05rem;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #dedede;
 }
 .kctj-form i{
     font-size: .6rem;

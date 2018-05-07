@@ -17,7 +17,17 @@ new Vue({
 		}
 	},
 	created:function(){
-		
+        var _this = this;
+        var para = {};
+		$.ajax({
+            type:"post",
+            url:"",
+            data:para,
+            dataType:"json",
+            success:function(data){
+
+            }
+        })
 	},
 	methods:{
 		search:function(){

@@ -54,7 +54,7 @@
 
 .swiper-container{
     width: 100%;
-    height: 8rem;
+    height: 12rem;
 }
 .swiper-container .swiper-wrapper{
     width: 100%;
@@ -81,7 +81,7 @@
 .self-slide .self-common{
     float: left;
     width: 50%;
-    height: 8rem;
+    height: 12rem;
 }
 .self-common .flex{
     width: 50%;

@@ -4,13 +4,13 @@ new Vue({
         return {
             listname:"我们的荣誉",
             listImg:[{
-                url:"/img/cbyey/cbyey.png"
+                url:"/img/cbyey/wmdry/1.jpg"
             },{
-                url:"/img/cbyey/cbyey.png"
+                url:"/img/cbyey/wmdry/2.jpg"
             },{
-                url:"/img/cbyey/cbyey.png"
+                url:"/img/cbyey/wmdry/3.jpg"
             },{
-                url:"/img/cbyey/cbyey.png"
+                url:"/img/cbyey/wmdry/4.jpg"
             }],
             basic:{
               name:"王芳园长",
@@ -30,11 +30,13 @@ new Vue({
             },
   
             cbyey:"/img/cbyey/cbyey.png",
+            brandimg:"/img/cbyey/brand.png",
+            wf:"/img/wf.jpg",
             cur:""
         }
     },
     mounted(){
-        console.log('mounted',this);
+        //console.log('mounted',this);
         var swiper = new Swiper('.swiper-container',{
               direction: 'horizontal',
               loop: true,
@@ -51,7 +53,7 @@ new Vue({
         localStorage.setItem("title","初本幼儿园");
         //$("#title").text("初本幼儿园");
         var t = this.getUrl().t;
-        console.log(t);
+        //console.log(t);
         if(t=="intro"){
             this.changeToIntro();
         }else if(t=="brand"){

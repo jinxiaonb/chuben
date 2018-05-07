@@ -38,12 +38,30 @@
 												<div class="self-common self-left">
 													<div class="flex"><img :src="item.img" alt=""></div>
 													<h3 class="title">{{ item.title }}</h3>
-													<p class="desc">{{ item.desc }}</p>
+													<div class="desc">
+														<p>{{ item.detail1.d1 }}</p>
+														<p>{{ item.detail1.d2 }}</p>
+														<p>{{ item.detail1.d3 }}</p>
+														<p>{{ item.detail1.d4 }}</p>
+														<p>{{ item.detail1.d5 }}</p>
+														<p>{{ item.detail1.d6 }}</p>
+														<p>{{ item.detail1.d7 }}</p>
+														<p>{{ item.detail1.d8 }}</p>
+													</div>
 												</div>
 												<div class="self-common self-slide">
 													<div class="flex"><img :src="item.img2" alt=""></div>
 													<h3 class="title">{{ item.title2 }}</h3>
-													<p class="desc">{{ item.desc2 }}</p>
+													<div class="desc">
+															<p>{{ item.detail2.d1 }}</p>
+															<p>{{ item.detail2.d2 }}</p>
+															<p>{{ item.detail2.d3 }}</p>
+															<p>{{ item.detail2.d4 }}</p>
+															<p>{{ item.detail2.d5 }}</p>
+															<p>{{ item.detail2.d6 }}</p>
+															<p>{{ item.detail2.d7 }}</p>
+															<p>{{ item.detail2.d8 }}</p>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -53,7 +71,7 @@
 							</div>
 						</div>
 						
-						<div class="stkc">
+						<!-- <div class="stkc">
 							<h3 class="main-title">试听课程</h3>
 							<div class="stkc-video">
 								<video  controls="controls" id="stkc-movie">
@@ -61,7 +79,7 @@
 									<source :src="moviemp4" type="video/mp4">
 								</video>
 							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</template>

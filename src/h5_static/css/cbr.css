@@ -9,7 +9,7 @@
     box-shadow: 0px 0px 4px #ccc;
     border-radius: 4px;
     padding-bottom: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
 }
 .intro{
     margin-bottom: 0.5rem;
@@ -45,7 +45,22 @@
 .name{
     text-align: center;
     line-height: 1rem;
-    font-size: 0.5rem;
+    font-size: 0.4rem;
     color: #E91E63;
     padding: .5rem 0 .3rem 0;
+}
+
+
+.t-desc{
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+.t-desc p{
+    padding: .3rem .6rem;
+    line-height: .5rem;
+    color: #666;
+}
+.t-desc em{
+    color: #111;
 }

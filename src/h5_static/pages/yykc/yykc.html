@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,user-scalable=no" />
-		<title>分园地址</title>
+		<title>预约课程</title>
 		<link rel="stylesheet" href="/css/reset.css">
 		<link rel="stylesheet" href="/css/header.css">
 		<link rel="stylesheet" href="/css/yykc.css">
@@ -20,20 +20,19 @@
 			
 						<div class="kctj-form">
 							<div class="flex">
-								<div class="flex-5"><input type="text" placeholder="姓名"></div>
-								<div class="flex-1"><i class="iconfont">&#xe605;</i></div>
+								<div class="flex-5"><input type="text" placeholder="姓名" ref="babyname"></div>
+								<div class="flex-1"><i class="iconfont" @click="cancelName">&#xe619;</i></div>
 							</div>
 							<div class="flex">
-								<div class="flex-5"><input type="text" placeholder="电话"></div>
-								<div class="flex-1"><i class="iconfont">&#xe605;</i></div>
+								<div class="flex-5"><input type="text" placeholder="电话" ref="phone"></div>
+								<div class="flex-1"><i class="iconfont" @click="cancelPhone">&#xe619;</i></div>
 							</div>
 							<div class="flex">
-								<div class="flex-5"><input type="text" placeholder="孩子年龄"></div>
-								<div class="flex-1"><i class="iconfont">&#xe605;</i></div>
+								<div class="flex-6"><span>出生年月：</span><select class="year" name="year" id="year" ref="year"><option value="2017">2017年</option><option value="2018">2018年</option><option value="2019">2019年</option></select><select class="flex-3" name="month" id="month" ref="month"><option value="1">1月份</option><option value="2">2月份</option><option value="3">3月份</option><option value="4">4月份</option><option value="5">5月份</option><option value="6">6月份</option><option value="7">7月份</option><option value="8">8月份</option><option value="9">9月份</option><option value="10">10月份</option><option value="11">11月份</option><option value="12">12月份</option></select></div>
 							</div>
 						</div>
 			
-						<div class="fydz-btn"><button type="button">预约课程</button></div>
+						<div class="fydz-btn"><button type="button" @click="yykcEvent">预约课程</button></div>
 						<h4><a a href="javascript:void(0);" onClick="javascript:history.go(-1);"  title="关于我们">返回</a></h4>
 					</div>
 				</div>

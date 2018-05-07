@@ -7,17 +7,24 @@ new Vue({
 			cbkt:'/img/cbkt/cbkt.png',
 			listname:"精彩瞬间",
 			listImg:[{
-				url:'/img/cbkt/jcsj.jpeg'
+				url:'/img/cbkt/jcsj/jcsj1.jpg'
 			},{
-				url:'/img/cbkt/jcsj.jpeg'
+				url:'/img/cbkt/jcsj/jcsj2.jpg'
 			},{
-				url:'/img/cbkt/jcsj.jpeg'
+				url:'/img/cbkt/jcsj/jcsj3.jpg'
 			},{
-				url:'/img/cbkt/jcsj.jpeg'
+				url:'/img/cbkt/jcsj/jcsj4.jpg'
+			},{
+				url:'/img/cbkt/jcsj/jcsj5.jpg'
+			},{
+				url:'/img/cbkt/jcsj/jcsj6.jpg'
+			},{
+				url:'/img/cbkt/jcsj/jcsj7.jpg'
 			}],
 			ckjs:{
+				ktjs:"课程设计均扎根2-3岁幼儿本源，遵循该年龄段的独特本性，指引教养人不忘初心，尊重人之本源、教育之本，帮助孩子在最佳的时期获得最佳的成长",
 				name:"课程特色",
-				desc:"吸收蒙特梭利、华德福教育方式的优势，并融合情感教育和传统教育的精髓，打造具备初本幼园特色的课程体系，从八大维度进行幼儿全方位启蒙。",
+				desc:"初本幼园吸收了华德福、蒙台梭利、情感教育课程的精髓，基于“家”“孵化”的环境创设理念，打破以往托幼机构各班自行“闭门造车”的区域界线，实现融合贯通，师资共享、资源共享，为孩子们提供在幼儿园学习和成长的自由空间。",
 				list:[{
 					img:'/img/cbkt/klcf.png',
 					name:"快乐厨房",
@@ -50,7 +57,7 @@ new Vue({
 		}
 	},
     mounted(){
-        console.log('mounted',this);
+        //console.log('mounted',this);
         var swiper = new Swiper('.swiper-container',{
               direction: 'horizontal',
               loop: true,
@@ -66,5 +73,43 @@ new Vue({
 	},
 	updated:function(){
 		//console.log(this.pattern);
+	},
+	methods:{
+		cancelName:function(){
+			//var name = this.$refs.babyname.value;
+			this.$refs.babyname.value = "";
+		},
+		cancelPhone:function(){
+			this.$refs.phone.value = "";
+		},
+		yykcPattern1:function(){
+			var name = this.$refs.babyname.value,//姓名
+				phone = this.$refs.phone.value,//手机号
+				year = this.$refs.year.value,//年
+				month = this.$refs.month.value,//月
+				pattern = this.$refs.pattern.value,//类型，暂时就一种，少儿英语先
+				para = {
+					name:name,
+					phone:phone,
+					year:year,
+					month:month,
+					pattern:pattern
+				};
+				if(name == "" || phone == ""){
+					alert("姓名或者手机号为空了");
+					return false;
+				}
+
+				$.ajax({
+					type:"post",
+					url:"",
+					data:para,
+					dataType:"json",
+					success:function(data){
+						console.log(data);
+					}
+				});
+				console.log(para);
+		}
 	}
 });
